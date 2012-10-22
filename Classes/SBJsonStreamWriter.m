@@ -275,7 +275,9 @@ static const char *strForChar(int c) {
 		case 34: return "\\\""; break;
 		case 92: return "\\\\"; break;
 	}
+#ifdef DEBUG
 	NSLog(@"FUTFUTFUT: -->'%c'<---", c);
+#endif
 	return "FUTFUTFUT";
 }
 
